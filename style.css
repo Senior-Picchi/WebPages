@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 36px;
+  color: #333;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Add this line to center the menu */
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.item {
+  flex-basis: calc(50% - 10px);
+  margin: 10px;
+}
+.item-name {
+  flex-basis: 60%;
+  font-size: 20px;
+  color: #333;
+}
+
+.item-price {
+  flex-basis: 20%;
+  text-align: right;
+  font-size: 20px;
+  color: #333;
+}
+
+.item-quantity {
+  flex-basis: 20%;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #333;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+button {
+  margin: 0 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.result {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.result span {
+  font-weight: bold;
+  color: #333;
+}
