@@ -298,5 +298,6 @@ button:hover {
 
 input {
   background-color: #999999;
+  border-radius: 0.5em;
 }
 
